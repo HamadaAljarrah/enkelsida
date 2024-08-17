@@ -3,6 +3,7 @@ import TwoColumnBlockView from '@/components/blocks/tow-column-block/two-column-
 import SiteContainer from '@/components/site-container';
 import { PAGES } from '@/data/pages';
 import { IBlock, IHeroBlock, ITwoColumnBlock } from '@/data/types';
+import { getPageBlocks, getPageById, getPageBySlug } from '@/services/pages';
 import { notFound } from 'next/navigation';
 import React from 'react'
 
@@ -27,8 +28,9 @@ const findBlock = (block: IBlock) => {
     return bockType;
 }
 
-const page = ({ params }: Props) => {
-    const page = PAGES.find((page) => page.id === params.page_id)
+const page = async({ params }: Props) => {
+    const page = await getPageById(params.page_id);
+    const blocks = await getPageBlocks(params.page_id);
 
     if (!page) return notFound()
 
@@ -36,7 +38,7 @@ const page = ({ params }: Props) => {
 
     return (
         <div className='bg-background'>
-            {page.block.map(block => {
+            {blocks.map((block:any) => {
                 return <div className='h-screen' key={block.id}>{findBlock(block)}</div>
             })}
         </div>

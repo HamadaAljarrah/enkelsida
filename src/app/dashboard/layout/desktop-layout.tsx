@@ -18,8 +18,6 @@ const DesktopLayout = ({ children }: { children: ReactNode }) => {
                 </div>
                 <div className='flex flex-col gap-3 mt-20'>
                     <SidebarLink icon={<FileText size={20} />} text='Pages' href='/dashboard/pages' />
-                    <SidebarLink icon={<Workflow size={20} />} text='Content' href='/dashboard/content' />
-                    <SidebarLink icon={<KeySquare size={20} />} text='Plans' href='/dashboard/plans' />
                 </div>
                 <div className="mt-auto">
                     <Link href='/dashboard/settings' className='flex px-5 py-3 rounded-xl w-full transition-all items-center gap-3 pl-5 hover:bg-accent/10'>

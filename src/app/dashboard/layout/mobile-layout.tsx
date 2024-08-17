@@ -29,12 +29,7 @@ const MobileLayout = ({ children }: { children: ReactNode }) => {
                                 <SheetClose>
                                     <SidebarLink icon={<FileText size={20} />} text='Pages' href='/dashboard/pages' />
                                 </SheetClose>
-                                <SheetClose>
-                                    <SidebarLink icon={<Workflow size={20} />} text='Content' href='/dashboard/content' />
-                                </SheetClose>
-                                <SheetClose>
-                                    <SidebarLink icon={<KeySquare size={20} />} text='Plans' href='/dashboard/plans' />
-                                </SheetClose>
+                          
                             </div>
                             <div className="mt-auto">
                                 <Link href='/dashboard/settings' className='flex px-5 py-3 rounded-xl w-full transition-all items-center gap-3 pl-5 hover:bg-accent/10'>
