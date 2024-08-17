@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { Bell, FileText, Headset, KeySquare, LogOut, MessageSquareMore, Workflow } from 'lucide-react'
+import { Bell, FileText, Headset, KeySquare, LogOut, MessageSquareMore, MonitorSmartphone, Workflow } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import SidebarLink from '@/components/sidebar-link'
@@ -17,7 +17,7 @@ const DesktopLayout = ({ children }: { children: ReactNode }) => {
                     <span className='w-2 h-2 rounded-full bg-red-500 mb-1'></span>
                 </div>
                 <div className='flex flex-col gap-3 mt-20'>
-                    <SidebarLink icon={<FileText size={20} />} text='Pages' href='/dashboard/pages' />
+                    <SidebarLink icon={<MonitorSmartphone size={20} />} text='Websites' href='/dashboard/websites' />
                 </div>
                 <div className="mt-auto">
                     <Link href='/dashboard/settings' className='flex px-5 py-3 rounded-xl w-full transition-all items-center gap-3 pl-5 hover:bg-accent/10'>

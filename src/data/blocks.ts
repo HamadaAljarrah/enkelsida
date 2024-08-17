@@ -1,7 +1,6 @@
 
 export const BLOCKS = [
     {
-        pageId: "1",
         id: "2",
         name: "Hero",
         type: "HeroBlock",
@@ -21,7 +20,6 @@ export const BLOCKS = [
         },
     },
     {
-        pageId: "1",
         id: "1",
         name: "Two Column",
         type: "TwoColumnBlock",
