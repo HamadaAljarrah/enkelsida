@@ -5,4 +5,4 @@ export const users = [
 ];
 
 // Simulate a logged-in user (e.g., newuser)
-export const loggedInUser = users[0];
+export const loggedInUser = users[2];
