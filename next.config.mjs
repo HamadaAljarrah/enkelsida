@@ -8,7 +8,7 @@ const nextConfig = {
                     has: [
                         {
                             type: 'host',
-                            value: `(?<subdomain>[^.]+)\\.${process.env.NEXT_PUBLIC_DOMAIN}`,
+                            value: `(?<subdomain>[^.]+)\\.enkelsida`,
                         },
                     ],
                     destination: '/preview/:subdomain',
@@ -18,7 +18,7 @@ const nextConfig = {
                     has: [
                         {
                             type: 'host',
-                            value: `${process.env.NEXT_PUBLIC_DOMAIN}`,
+                            value: `enkelsida`,
                         },
                     ],
                     destination: '/',
