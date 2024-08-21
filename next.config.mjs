@@ -8,7 +8,7 @@ const nextConfig = {
                     has: [
                         {
                             type: 'host',
-                            value: `(?<subdomain>[^.]+)\\.enkelsida`,
+                            value: `(?<subdomain>[^.]+)\\.enkelsida.com`,
                         },
                     ],
                     destination: '/preview/:subdomain',
@@ -18,7 +18,7 @@ const nextConfig = {
                     has: [
                         {
                             type: 'host',
-                            value: `enkelsida`,
+                            value: `enkelsida.com`,
                         },
                     ],
                     destination: '/',
